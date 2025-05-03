@@ -10,7 +10,7 @@
   .about-section p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: rgb(206, 206, 206);
+    color:black;
     font-family: 'Poppins', sans-serif;
   }
   
@@ -21,7 +21,6 @@
   }
   
   .btn-read-more{
-    /* background-color: #0D6EFD; */
     background-color:#facc15;
     padding: 10px;
     border: none;

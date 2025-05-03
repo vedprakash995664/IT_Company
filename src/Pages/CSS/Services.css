@@ -1,7 +1,8 @@
 .services-container {
     padding: 24px;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
+    background-image: url('/Images/bacfinal.avif');
 }
 .services-header h2 {
     font-size: 34px;
@@ -11,7 +12,7 @@
 }
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -65,4 +66,12 @@
     color: #555;
     font-size: 14px;
     line-height: 1.5;
+}
+
+@media(max-width:480px){
+    .services-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    }
 }

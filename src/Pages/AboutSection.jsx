@@ -36,7 +36,7 @@ function AboutSection() {
         {/* Image Content */}
         <div className="col-md-6 text-center mt-4 mt-md-0">
           <img
-            src="/Images/b.jpg"
+            src="/Images/e.avif"
             alt="About TechVine"
             className="img-fluid rounded shadow about-image"
           />
