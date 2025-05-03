@@ -1,0 +1,59 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.headerOuter {
+  background-color: white;
+  padding: 10px;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix mobile collapse background */
+.navbarCustom {
+  background-color: white;
+  padding: 10px;
+}
+
+.logo {
+  height: 50px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.navItem {
+  /* padding-top: 20px; */
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+/* Social icons styling */
+.socialIcons a {
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 1.1rem;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.socialIcons a:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+
+.offcanvasBg {
+  background-color: white;
+}
+
+.offcanvasBg .offcanvas-header,
+.offcanvasBg .offcanvas-body {
+  padding: 20px;
+}

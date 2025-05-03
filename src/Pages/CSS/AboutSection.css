@@ -1,0 +1,45 @@
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    color: #facc15;
+  }
+  
+  .section-description,
+  .about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgb(206, 206, 206);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .btn-read-more{
+    /* background-color: #0D6EFD; */
+    background-color:#facc15;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    &:hover{
+      background-color:transparent;
+      border: 1px solid #facc15;
+    }
+  }
+  
+
+  @media(max-width:480px){
+      
+  .section-description,
+  .about-section p{
+    text-align:justify;
+    font-family: 'Poppins' sans-serif;
+  }
+  }

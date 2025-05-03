@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: #fff;
+}
+
+.contact-page {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+}
+
+.contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  flex-wrap: wrap; /* Allow elements to stack on smaller screens */
+}
+  
+.contact-text {
+  flex: 1 1 300px;
+  min-width: 280px;
+  text-align: left; /* Default text alignment */
+}
+
+.contact-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  width: 90%;
+  color: #facc15; /* yellow accent */
+}
+
+.contact-text p {
+  font-size: 16px;
+  color: #cbd5e1;
+  width: 90%;
+}
+
+.contact-form {
+  flex: 1 1 300px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.email-input {
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background-color: #334155;
+  color: #fff;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.subscribe-btn {
+  padding: 14px;
+  font-size: 16px;
+  background-color: #3b82f6; /* blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.subscribe-btn:hover {
+  background-color: #2563eb;
+}
+
+/* === Media Queries for Responsiveness === */
+
+/* For Tablets and Smaller Screens (≤ 1024px) */
+@media (max-width: 1024px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .contact-text h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .contact-text p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .email-input,
+  .subscribe-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+/* For Mobile Phones (≤ 768px) */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .contact-text h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contact-text p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .email-input,
+  .subscribe-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* For Small Mobile Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .contact-content {
+    padding: 20px;
+  }
+
+  .contact-text h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .contact-text p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .email-input,
+  .subscribe-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  /* Stack the form elements vertically, make them full-width */
+  .contact-form {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,129 @@
+.footer {
+    background-color: black;
+    color: #cbd5e1;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+    min-width: 180px;
+  }
+  
+  .footer-left {
+    flex: 2;
+  }
+  
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section h4 {
+    color: #facc15;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #3b82f6;
+  }
+  
+  .footer-bottom {
+    background-color: black;
+    color: #94a3b8;
+    padding: 20px 10px;
+    font-size: 14px;
+    border-top: 1px solid rgb(236, 236, 236);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .footer-bottom a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    color: #2563eb;
+  }
+  
+  .footer-copy,
+  .footer-dev {
+    margin: 0;
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-left {
+      text-align: left;
+    }
+  
+    .footer-section {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .footer-logo {
+      width: 100px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .footer-bottom {
+      flex-direction: column;
+      font-size: 13px;
+      gap: 5px;
+    }
+  
+    .footer-copy,
+    .footer-dev {
+      flex: none;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-bottom {
+      font-size: 12px;
+    }
+  
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+  }
+  

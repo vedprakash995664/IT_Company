@@ -1,0 +1,63 @@
+.technology-works-container {
+  background-color: #f8f9fa;
+  padding: 60px 5%;
+}
+
+.text-left-section {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.slider-wrapper {
+  padding-bottom: 50px;
+}
+
+.technology-card {
+  background: #f2f2f2;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 10px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+.technology-icon {
+  margin-bottom: 15px;
+}
+
+.technology-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.swiper-pagination {
+  margin-top: 30px !important;
+  position: relative;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #888 !important;
+  opacity: 1;
+  margin: 0 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #333 !important;
+}

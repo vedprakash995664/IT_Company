@@ -1,0 +1,68 @@
+.services-container {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.services-header h2 {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+}
+
+/* Added jump animation effect on hover */
+.service-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px) scale(1.02);
+    top: -5px;
+    animation: cardJump 0.5s ease;
+}
+
+@keyframes cardJump {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-6px) scale(1);
+    }
+    100% {
+        transform: translateY(-8px) scale(1);
+    }
+}
+
+.service-icon {
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.service-card h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}

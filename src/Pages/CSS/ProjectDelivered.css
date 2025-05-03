@@ -1,0 +1,101 @@
+.project-delivered {
+    width: 100%;
+    padding: 60px 5%;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+  }
+  
+  .text-content {
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    text-align: left;
+  }
+  
+  .project-heading {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .project-subheading {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Cards container */
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Individual card with background image */
+  .project-card {
+    flex: 1 1 48%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  /* Overlay and animated button */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
+  
+  .visit-button {
+    background-color: #fff;
+    color: red;
+    padding: 12px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+  
+  /* Hover effects */
+  .project-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .project-card:hover .visit-button {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .project-card {
+      flex: 1 1 100%;
+      height: 250px;
+    }
+  
+    .project-heading {
+      font-size: 2rem;
+    }
+  
+    .project-subheading {
+      font-size: 1rem;
+    }
+  }
+  
