@@ -1,5 +1,5 @@
 .services-container {
-    padding: 24px;
+    padding: 80px 40px;
     max-width: 100%;
     margin: 0 auto;
     background-image: url('/Images/bacfinal.avif');
@@ -13,7 +13,7 @@
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 30px;  
 }
 
 .service-card {
