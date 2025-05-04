@@ -40,8 +40,8 @@ function TechnologyWorks() {
   return (
     <div className="technology-works-container">
       <div className="text-left-section" data-aos="fade-up">
-        <h2 className="section-title">Technologies We Work With</h2>
-        <p className="section-description">
+        <h2 className="section-title" style={{color:"#FFC107"}}>Technologies We Work With</h2>
+        <p className="section-description text-white">
           We specialize in a wide range of modern technologies to build fast, secure, and scalable applications —
           from cloud platforms like AWS, Azure, and Google Cloud, to front-end frameworks like React and mobile development tools.
         </p>

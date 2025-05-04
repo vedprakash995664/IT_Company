@@ -1,6 +1,6 @@
 .contact-page {
   padding: 80px 20px;
-  background: linear-gradient(to right, #0f172a, #1e293b);
+  /* background: linear-gradient(to right, #0f172a, #1e293b); */
 }
 
 .contact-content {
@@ -14,7 +14,7 @@
   padding: 60px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-  flex-wrap: wrap; /* Allow elements to stack on smaller screens */
+  flex-wrap: wrap; 
 }
   
 .contact-text {
@@ -59,7 +59,7 @@
 .subscribe-btn {
   padding: 14px;
   font-size: 16px;
-  background-color: #3b82f6; /* blue */
+  background-color: #facc15; /* blue */
   color: white;
   border: none;
   border-radius: 6px;
@@ -70,7 +70,7 @@
 }
 
 .subscribe-btn:hover {
-  background-color: #2563eb;
+  background-color: #d8b00f;
 }
 
 /* === Media Queries for Responsiveness === */
@@ -129,6 +129,9 @@
 @media (max-width: 480px) {
   .contact-content {
     padding: 20px;
+  }
+  .contact-text {
+    flex: none;
   }
 
   .contact-text h1 {

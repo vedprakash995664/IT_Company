@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './CSS/Header.css';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -45,13 +46,14 @@ function Header() {
 
         {/* Regular nav links for desktop view */}
         <Navbar.Collapse id="navbarScroll" className="d-none d-lg-flex">
-          <Nav className="m-auto">
-            <Nav.Link href="#action1" className="navItem">Home</Nav.Link>
-            <Nav.Link href="#action2" className="navItem">Services</Nav.Link>
-            <Nav.Link href="#action3" className="navItem">Portfolio</Nav.Link>
-            <Nav.Link href="#action4" className="navItem">About Us</Nav.Link>
-            <Nav.Link href="#action5" className="navItem">Contact Us</Nav.Link>
-          </Nav>
+        <Nav className="m-auto">
+  <Nav.Link as={Link} to="/" className="navItem">Home</Nav.Link>
+  <Nav.Link as={Link} to="/services" className="navItem">Services</Nav.Link>
+  <Nav.Link as={Link} to="#" className="navItem">Portfolio</Nav.Link>
+  <Nav.Link as={Link} to="/about" className="navItem">About Us</Nav.Link>
+  <Nav.Link as={Link} to="/contact" className="navItem">Contact Us</Nav.Link>
+</Nav>
+
 
           <div className="socialIcons d-flex align-items-center gap-3">
             <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookF /></a>

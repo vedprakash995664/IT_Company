@@ -7,6 +7,7 @@ body {
   padding: 10px;
   z-index: 9999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 /* Fix mobile collapse background */
@@ -21,11 +22,33 @@ body {
   border-radius: 50%;
 }
 
+/* Nav item styling and hover underline effect */
 .navItem {
-  /* padding-top: 20px; */
+  position: relative;
   font-size: 20px;
   font-weight: 500;
-  color: black;
+  color: black !important;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.navItem::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FACC15; /* Underline color */
+  transition: width 0.3s ease;
+}
+
+.navItem:hover::after {
+  width: 100%; /* Underline expands on hover */
+}
+
+.navItem:hover {
+  color: #FACC15 !important; /* Optional: Text color changes to the underline color on hover */
 }
 
 /* Social icons styling */
@@ -44,10 +67,9 @@ body {
 }
 
 .socialIcons a:hover {
-  background-color: #0d6efd;
+  background-color: #FACC15;
   color: #fff;
 }
-
 
 .offcanvasBg {
   background-color: white;

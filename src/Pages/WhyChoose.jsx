@@ -5,7 +5,7 @@ const WhyChoose = () => {
   return (
     <div className="why-choose-container">
       <div className="why-choose-inner">
-        <h2 className="heading">Why Should We Choose You?</h2>
+        <h2 className="heading" style={{color:"#FFC107"}}>Why Should We Choose You?</h2>
         <div className="content">
           <div className="stats">
             <div className="stat-box">

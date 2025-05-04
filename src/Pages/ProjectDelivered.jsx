@@ -6,8 +6,8 @@ function ProjectDelivered() {
   return (
     <div className="project-delivered">
       <div className="text-content">
-        <h2 className="project-heading">Our Delivered Projects</h2>
-        <p className="project-subheading">
+        <h2 className="project-heading" style={{color:"#FFC107"}}>Our Delivered Projects</h2>
+        <p className="project-subheading ">
           Explore our recent work that reflects creativity, precision, and quality development.
         </p>
       </div>
