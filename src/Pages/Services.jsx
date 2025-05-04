@@ -38,7 +38,7 @@ const services = [
     description: 'Secure and scalable cloud services for global reach.',
     icon: <Cloud size={42} color="#0284c7" />,
   },
-  {
+  {  
     title: 'Cybersecurity',
     description: 'Protect your systems and data with industry-grade security.',
     icon: <ShieldCheck size={42} color="#ca8a04" />,
@@ -56,7 +56,7 @@ function Services() {
 
   return (
     <div className="services-container">
-      <div className="services-header">
+      <div className="services-header"> 
         <h2 style={{ color: '#facc15' }}>Our Software Development Services</h2>
       </div>
       <div className="services-grid">
